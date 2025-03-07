@@ -15,6 +15,15 @@ body{
     text-align: center;
 }
 
+.navigation{
+    position: fixed;
+    top: 0;          
+    left: 0;          
+    width: 100%; 
+    background-color: white;
+    z-index: 3;
+}
+
 #site_logo {
     float: left;
     width: 45%;
@@ -67,6 +76,7 @@ nav a:hover{
 #main_image img {
 	width: 100%;
     height: 400px;
+    margin-top: 184px;
 }
 
 #concept {
@@ -168,6 +178,7 @@ nav a:hover{
     align-items: center;   
     color: rgb(87, 11, 26);
     margin: 50px;
+    margin-top: 190px;
 }
 
 #lunch{
@@ -201,12 +212,29 @@ h3{
     flex-wrap: wrap; 
     margin: 10px;
 }
+.vege_item{
+    position: relative;
+    z-index: 0;
+}
+
+.vege_mark{
+    position: absolute;
+    width: 50%;
+    font-size: 20px;
+    color: #fff;
+    top: 70px;
+    right: -20px;
+    background-color: rgba(2, 53, 9, 0.228);
+    border-radius: 50%;
+    padding: 3%;
+}
 
 /*reservation------------------------------------------------------*/
 .reservation_container{   
     background:  rgb(227, 246, 200);
     padding-top: 50px;
     text-align: center;
+    margin-top: 190px;
 }
 .reservation_container p{
     color: #0b4601;
