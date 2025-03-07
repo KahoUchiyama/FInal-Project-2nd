@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+	<style>/*internal css*/
+	.alc-item {
+        display: flex;
+        align-items: center; 
+        gap: 15px; 
+		padding: 20px; 
+		padding-left: 300px;
+		padding-right: 300px;
+		border-bottom: 1px dotted gray;
+	}
+
+	.alc-item img {
+        width: 400px; 
+        height: auto;
+	}
+
+	.alc-item:nth-child(even) {
+        flex-direction: row-reverse; 
+	}
+
+	.alc-item p {
+        flex: 1; 
+		text-align: center;
+		font-size: 30px;
+	}
+
+	h3{
+		text-align: center;
+		background-color: aquamarine;
+	}
+	</style>
+</head>
+<body>
+    <header>
+		<div class="container">
+			<div id="site_logo">
+				<h1><img src="./img/logo.png"></h1>
+			</div>
+			<div id="site_reserve">
+				<p>Reservation</p>
+				<p class="site_tel">TEL:604-568-0013</p>
+			</div>
+		</div>
+		<nav>
+			<div class="container">
+				<ul>
+                    <li><a href="./index.html">HOME</a></li>
+					<li><a href="./LUNCH.html">LUNCH</a></li>
+					<li><a href="./ALCOHOLIC.html">ALCOHOLIC</a></li>
+					<li><a href="./RESERVATION.html">RESERVATION</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<h1 class="menu_title">ALCHOLIC</h1>		
+		<h3>Japanese Beer</h3>
+		<div class="alc-item">
+			<img src="./alc/potato.png" alt="potato">
+			<p>COEDO Beninaka sweet Potato Amber</p>
+		</div>			
+		<div class="alc-item">
+			<img src="./alc/yuzu.png" alt="potato">
+			<p>COEDO Yuzu Japanese Pale Ale</p>
+		</div>			
+		<div class="alc-item">
+			<img src="./alc/dassai.png" alt="potato">
+			<p>Dassai</p>
+		</div>			
+			<div class="alc-item">
+				<img src="./alc/nigori.png" alt="potato">
+				<p>Kizuna Nigori Sake</p>
+			</div>			
+			<div class="alc-item">
+				<img src="./alc/kaiun.png" alt="potato">
+				<p>Kaiun</p>
+			</div>			
+			<h3>Cocktails</h3>			
+			<div class="alc-item">
+				<img src="./alc/daichi.png" alt="potato">
+				<p>Daichi</p>
+			</div>			
+			<div class="alc-item">
+				<img src="./alc/sunrise.png" alt="potato">
+				<p>Yuzu Sun Rise</p>
+			</div>			
+			<div class="alc-item">
+				<img src="./alc/yuzugin.png" alt="potato">
+				<p>Yuzu Gin&Tonic</p>
+			</div>			
+			<div class="alc-item">
+				<img src="./alc/smash.png" alt="potato">
+				<p>Yuzu Smash</p>
+			</div>			
+			<div class="alc-item">
+				<img src="./alc/sangria.png" alt="potato">
+				<p>Shizenya Sangria</p>
+			</div>			
+			<div class="alc-item">
+				<img src="./alc/beni.png" alt="potato">
+				<p>Beni</p>
+			</div>			
+	</main>
+	<footer id="bottom">
+		<p>Copyright&copy; </p>
+	</footer>	
+</body>
+</html>
