@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --title-color: color: #0b4601;
+    --font-size: 14px;
+}
+
 body{
 	font-family:serif;
 }
@@ -167,7 +172,7 @@ nav a:hover{
 }
 
 #access h2,
-#access h5{
+.access_txt h3{
     padding: 20px;
 }
 
@@ -202,7 +207,7 @@ nav a:hover{
 }
 
 h3{
-    color: #0b4601;
+    color: var(--title-color);
     margin: 5px;
 }
 
@@ -264,11 +269,12 @@ input {
 
 button{
     padding: 10px;
-    background: #1f6e05;
+    background-color: #1f6e05;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {

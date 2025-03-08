@@ -10,13 +10,26 @@
 		margin-top: 190px;
 	}
 	.alc-item {
-        display: flex;
-        align-items: center; 
+		@media screen and (min-width:992px){
+		display: flex;
+		align-items: center; 
         gap: 15px; 
-		padding: 20px; 
+		padding: 10%; 
 		padding-left: 300px;
 		padding-right: 300px;
 		border-bottom: 1px dotted gray;
+			
+		}
+		@media screen and (max-width:992px){
+        display: flex; 
+		flex-direction: column;
+        align-items: center; 
+        gap: 15px; 
+		padding: 10%; 
+		/* padding-left: 300px;
+		padding-right: 300px; */
+		border-bottom: 1px dotted gray;
+	}
 	}
 
 	.alc-item img {
@@ -24,9 +37,10 @@
         height: auto;
 	}
 
+    /* @media screen and (min-width:992px){
 	.alc-item:nth-child(even) {
         flex-direction: row-reverse; 
-	}
+	} } */
 
 	.alc-item p {
         flex: 1; 
@@ -36,7 +50,7 @@
 
 	h3{
 		text-align: center;
-		background-color: aquamarine;
+		background-color: rgba(133, 202, 179, 0.697);
 	}
 	</style>
 </head>
