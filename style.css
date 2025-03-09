@@ -24,12 +24,12 @@ body{
     position: fixed;
     top: 0;          
     left: 0;          
-    width: 100%; 
+    width: 100vw; 
     background-color: white;
     z-index: 3;
 }
 
-#site_logo {
+/* #site_logo {
     float: left;
     width: 45%;
 }
@@ -42,7 +42,24 @@ body{
     margin-top: 30px;
     color: rgb(87, 11, 26);
     background-color: white;
+} */
+
+.top{
+    display: flex;
+    justify-content: space-between;
 }
+
+#site_reserve {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 1.5em;
+    align-items: start;
+    margin-top: 30px;
+    color: rgb(87, 11, 26);
+    background-color: white;
+}
+
 
 .site_tel {
     font-size: 1.1em;
@@ -98,6 +115,14 @@ nav a:hover{
     text-align: center;
     height: 80px;
     overflow: scroll;
+}
+
+.concept_text::before{
+    content:open-quote
+}
+
+.concept_text::after{
+    content:close-quote
 }
 
 .ocean_box{
@@ -217,6 +242,37 @@ h3{
     flex-wrap: wrap; 
     margin: 10px;
 }
+
+.chirashi_item{
+    position: relative;
+    z-index: 0;
+}
+
+.recommend_mark{
+    position: absolute;
+    width: 50%;
+    font-size: 20px;
+    color: #fff;
+    top: 70px;
+    right: -20px;
+    background-color: rgba(2, 53, 9, 0.228);
+    border-radius: 50%;
+    padding: 3%;
+    animation: change-color 1s infinite;
+}
+
+@keyframes change-color{
+    0%{
+        background-color: rgba(255, 255, 11, 0.849);
+    }
+    50%{
+        background-color: rgba(255, 0, 0, 0.709);
+    }
+    100%{
+        background-color: rgb(250, 215, 215);
+    }
+}
+
 .vege_item{
     position: relative;
     z-index: 0;
@@ -229,10 +285,12 @@ h3{
     color: #fff;
     top: 70px;
     right: -20px;
-    background-color: rgba(2, 53, 9, 0.228);
+    background-color: rgba(2, 53, 9, 0.577);
     border-radius: 50%;
     padding: 3%;
 }
+
+
 
 /*reservation------------------------------------------------------*/
 .reservation_container{   
@@ -251,7 +309,7 @@ h3{
     display: grid;
     gap: 10px;
     grid-template-rows:auto;
-    max-width: 100%;
+    max-width: 100vw;
     margin: auto;
     padding: 100px;
     background:   rgb(227, 246, 200);
@@ -259,11 +317,11 @@ h3{
 }
 
 input {
-    width: 400px;
-    height: 50px;
-    padding: 8px;
+    width: 60vw;
+    height: 80%;
+    padding: 5%;
     border: 2px solid #cccccc09;
-    border-radius: 5px;
+    border-radius: 5%;
     text-align: center;
 }
 
