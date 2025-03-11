@@ -395,7 +395,7 @@ h3{
     font-size: 30px;
 }
 
-h3{
+.h3_title{
     text-align: center;
     background-color: rgba(133, 202, 179, 0.697);
 }
