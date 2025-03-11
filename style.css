@@ -404,10 +404,11 @@ h3{
 /*reservation------------------------------------------------------*/
 .reservation_container{   
     background:  rgb(227, 246, 200);
-    padding-top: 150px;
+    padding-top: 250px;
     text-align: center;
     /* margin-top: 190px; */
 }
+
 .reservation_container p{
     color: #0b4601;
     display: inline;
