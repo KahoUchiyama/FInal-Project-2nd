@@ -465,3 +465,30 @@ button:hover {
 	text-align: center;
 }
 
+.FAQ_form{
+    background-color:  rgb(227, 246, 200);
+    text-align: center;
+}
+
+details {
+    border: 1px solid #ccc;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+summary {
+    background: #f1f1f1;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+details[open] summary {
+    background: #ddd;
+}
+details p {
+    padding: 10px;
+    margin: 0;
+    background: white;
+}
+
