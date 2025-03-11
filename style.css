@@ -257,9 +257,17 @@ nav a:hover{
 	padding: 20px;
 }
 
-#access h2,
+#access h2{
+    font-size: 2em;
+}
+
 .access_txt h3{
+    font-size: 1.5em;
     padding: 20px;
+}
+
+.access_txt p{
+    font-size: 1.2rem;
 }
 
 /*LUNCH-------------------------------------------------------------------*/
