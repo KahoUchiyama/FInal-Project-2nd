@@ -21,13 +21,23 @@ body{
 }
 
 .navigation{
-    position: fixed;
+
     top: 0;          
     left: 0;          
     width: 100vw; 
     background-color: white;
     z-index: 3;
 }
+
+@media (min-width: 768px) {
+.navigation{
+    position: fixed;
+    top: 0;          
+    left: 0;          
+    width: 100vw; 
+    background-color: white;
+    z-index: 3;
+}}
 
 /* #site_logo {
     float: left;
@@ -117,7 +127,7 @@ nav a:hover{
     color: yellow;
 }
 
-#main_image img {
+#main_image > img {
 	width: 100%;
     height: auto;
     object-fit: cover; 
