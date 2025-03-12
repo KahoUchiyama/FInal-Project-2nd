@@ -17,7 +17,7 @@ body{
     max-width: 1100px;
 	margin: 0 auto;
     display: block;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .navigation{
@@ -47,7 +47,8 @@ body{
 }
 
 .nav_list {
-    /* display: block; */
+    /* display: block;
+    width: 20%; */
     display: flex;
     flex-direction: row;
 
@@ -70,16 +71,18 @@ body{
     background-color: white;
 }
 
+/* SP */
 @media (max-width: 768px) {
     .top {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     /* margin-bottom: 5%; */
     
     }
     #site_logo img{
         width:45%;
+        text-align: left;
     }
 
     #site_reserve {
@@ -88,6 +91,7 @@ body{
         margin-bottom: 3%;
         margin-left:30px ;
     }
+
 }
 
 .container::after {
@@ -111,7 +115,7 @@ nav li {
 	text-align: center;
 }
 
-/* PC */
+/* SP */
 @media (max-width: 768px) {
     nav li{
         width: 20%;
@@ -279,6 +283,14 @@ nav a:hover{
     padding-left: 150px;
 }
 
+
+@media (max-width: 768px) {
+    .menu_box{
+        padding-left: 0;
+}}
+
+
+
 #image_item{
     display: flex;
     flex-direction: column; 
@@ -306,11 +318,11 @@ h3{
 
 .recommend_mark{
     position: absolute;
-    width: 50%;
+    width: 37%;
     font-size: 20px;
     color: #fff;
     top: 70px;
-    right: -20px;
+    right: -5px;
     background-color: rgba(2, 53, 9, 0.228);
     border-radius: 50%;
     padding: 3%;
@@ -336,11 +348,11 @@ h3{
 
 .vege_mark{
     position: absolute;
-    width: 50%;
+    width: 40%;
     font-size: 20px;
     color: #fff;
     top: 70px;
-    right: -20px;
+    right: -5px;
     background-color: rgba(2, 53, 9, 0.577);
     border-radius: 50%;
     padding: 3%;
