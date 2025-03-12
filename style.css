@@ -381,11 +381,6 @@ h3{
     height: auto;
 }
 
-/* @media screen and (min-width:992px){
-.alc-item:nth-child(even) {
-    flex-direction: row-reverse; 
-} } */
-
 .alc-item p {
     flex: 1; 
     text-align: center;
