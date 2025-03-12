@@ -6,11 +6,6 @@ Restaurant Website Recreation
 
 This project is a recreation of a restaurant's website using HTML and CSS.
 
-## Technologies Used
-
-HTML5
-CSS3
-
 ## Features
 
 Responsive layout
